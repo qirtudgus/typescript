@@ -11,6 +11,22 @@
   pointer-events: none;
 }
 
+.container {
+  width: calc(100% - 10rem);
+  margin: 0 auto;
+  text-align: left;
+}
+.title {
+
+
+}
+.result {
+  text-align: left;
+}
+.line {
+  border-bottom: 1px solid #bbb;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import BasicType from './Component/BasicType';
+import Func from './Component/func';
+import Interface from './Component/interface';
 
 function App() {
   const navigate = useNavigate();
@@ -23,9 +25,25 @@ function App() {
       >
         변수의 기본 타입
       </button>
+      <button
+        onClick={() => {
+          navigate('/func');
+        }}
+      >
+        함수 식
+      </button>
+      <button
+        onClick={() => {
+          navigate('/interface');
+        }}
+      >
+        인터페이스
+      </button>
 
       <Routes>
         <Route path='/BasicType' element={<BasicType />}></Route>
+        <Route path='/func' element={<Func />}></Route>
+        <Route path='/interface' element={<Interface />}></Route>
       </Routes>
     </div>
   );
