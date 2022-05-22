@@ -4,6 +4,7 @@ import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import BasicType from './Component/BasicType';
 import Func from './Component/func';
 import Interface from './Component/interface';
+import State from './Component/state';
 
 function App() {
   const navigate = useNavigate();
@@ -39,11 +40,22 @@ function App() {
       >
         인터페이스
       </button>
+      <button
+        onClick={() => {
+          navigate('/state');
+        }}
+      >
+        useState
+      </button>
 
       <Routes>
         <Route path='/BasicType' element={<BasicType />}></Route>
         <Route path='/func' element={<Func />}></Route>
         <Route path='/interface' element={<Interface />}></Route>
+        <Route
+          path='/state'
+          element={<State name='성현' mark='마크' optional='옵셔널' />}
+        ></Route>
       </Routes>
     </div>
   );
