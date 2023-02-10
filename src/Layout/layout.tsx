@@ -41,7 +41,8 @@ const Layout = () => {
     { name: '함수', link: '/func' },
     { name: '인터페이스', link: '/interface' },
     { name: 'State', link: '/state' },
-    { name: 'Test', link: '/test' },
+    { name: 'Effect', link: '/effect' },
+    { name: 'reducer', link: '/reducer' },
   ];
 
   return (
